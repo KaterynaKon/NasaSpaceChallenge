@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { filterAndSort, getFilterOptions } from "@/lib/data";
 import type { Dimension, SortKey } from "@/lib/types";
 import EnvironmentTabs from "./EnvironmentTabs";
+import RankingList from "./RankingList";
 
 
 export default function Dashboard() {
@@ -31,7 +32,9 @@ export default function Dashboard() {
       />
 
       <main className="grid grid-cols-1 bg-slate-100 lg:h-[calc(100vh-7.5rem)] lg:grid-cols-[340px_1fr_360px]">
-       
+       <section className="overflow-y-auto">
+          <RankingList items={items} selectedId={selected?.id} onSelect={setSelectedId}/>
+        </section>
       </main>
     </>
   );

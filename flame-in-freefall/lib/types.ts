@@ -17,8 +17,6 @@ export type Investigation = {
   name: string;
   fullName: string;
   category: string;      // e.g. "Solid materials"
-  platform: string;      // e.g. "ISS · MSG"
-  years: string;         // e.g. "2013–2014"
   year: number;          // used for sorting
   fuels: string[];       // used by the Fuel filter, e.g. "100% C2H4"
   materials: string[];   // used by the Material filter, e.g. "Teflon"
