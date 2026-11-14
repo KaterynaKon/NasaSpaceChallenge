@@ -1,0 +1,129 @@
+[
+  {
+    "id": "bass-ii",
+    "name": "BASS-II",
+    "fullName": "Burning and Suppression of Solids-II",
+    "category": "Solid materials",
+    "platform": "ISS · MSG",
+    "years": "2013–2014",
+    "year": 2013,
+    "fuels": ["100% C2H4"],
+    "materials": ["Fiberglass", "Cotton", "Teflon"],
+    "fuelLabel": "Solid",
+    "o2Label": "21–30%",
+    "o2Max": 30,
+    "flowLabel": "0–20 cm/s",
+    "samples": 40,
+    "tags": ["fabrics", "21–30% O₂", "flow 0–20 cm/s"],
+    "score": 92,
+    "breakdown": { "oxygen": 96, "materials": 90, "gravity": 55, "flow": 78 },
+    "findings": [
+      {
+        "text": "The flammability limit of fabrics drops as forced flow increases; at 30% O₂ ignition is stable even without forced flow.",
+        "source": "Chowdhury et al., 2015 · Combustion and Flame 162(5)",
+        "doi": "10.1016/j.combustflame.2015.01.005"
+      },
+      {
+        "text": "CO₂ suppression is more effective in microgravity than on Earth because there is no buoyancy-driven transport.",
+        "source": "Bhattacharjee et al., 2016 · Fire Safety Journal 81",
+        "doi": "10.1016/j.firesaf.2016.01.003"
+      },
+      {
+        "text": "A 30% O₂ / 10.2 psi lunar atmosphere requires revised material screening criteria.",
+        "source": "NASA/CP-2016-219172 · BASS-II final report",
+        "doi": ""
+      }
+    ],
+    "publications": [
+      { "title": "Flame spread over solid fuels in microgravity: effects of flow and oxygen", "venue": "Combustion and Flame", "year": 2015, "citations": 34, "openAccess": true, "url": "https://doi.org/10.1016/j.combustflame.2015.01.005" },
+      { "title": "Suppression of solid fuel flames with CO₂ in low gravity", "venue": "Fire Safety Journal", "year": 2016, "citations": 12, "openAccess": true, "url": "https://doi.org/10.1016/j.firesaf.2016.01.003" },
+      { "title": "BASS-II final report: burning and suppression of solids", "venue": "NASA Technical Reports Server", "year": 2016, "kind": "pdf", "url": "https://ntrs.nasa.gov" }
+    ]
+  },
+  {
+    "id": "saffire-iii",
+    "name": "Saffire-III",
+    "fullName": "Spacecraft Fire Experiment III",
+    "category": "Solid materials",
+    "platform": "Cygnus · cargo vehicle",
+    "years": "2016–2017",
+    "year": 2016,
+    "fuels": ["100% C2H4"],
+    "materials": ["Cotton", "Fiberglass"],
+    "fuelLabel": "Solid",
+    "o2Label": "21%",
+    "o2Max": 21,
+    "flowLabel": "large scale",
+    "samples": 12,
+    "tags": ["films", "21% O₂", "large scale"],
+    "score": 87,
+    "breakdown": { "oxygen": 80, "materials": 88, "gravity": 90, "flow": 70 },
+    "findings": [
+      { "text": "Flame scaling holds at large volume; results match smaller ISS tests.", "source": "Placeholder source" }
+    ],
+    "publications": []
+  },
+  {
+    "id": "cfi-g",
+    "name": "CFI-G",
+    "fullName": "Cool Flames Investigation – Gaseous",
+    "category": "Gaseous fuel",
+    "platform": "ACME / CIR",
+    "years": "2017–2019",
+    "year": 2017,
+    "fuels": ["50% C2H4"],
+    "materials": [],
+    "fuelLabel": "Gaseous",
+    "o2Label": "up to 85%",
+    "o2Max": 85,
+    "flowLabel": "n/a",
+    "samples": 20,
+    "tags": ["propane", "up to 85% O₂", "cool flames"],
+    "score": 81,
+    "breakdown": { "oxygen": 70, "materials": 60, "gravity": 85, "flow": 65 },
+    "findings": [],
+    "publications": []
+  },
+  {
+    "id": "flex-2",
+    "name": "FLEX-2",
+    "fullName": "Flame Extinguishment Experiment 2",
+    "category": "Liquid fuel",
+    "platform": "MDCA",
+    "years": "2012–2016",
+    "year": 2012,
+    "fuels": ["40% CH7"],
+    "materials": [],
+    "fuelLabel": "Liquid",
+    "o2Label": "18–35%",
+    "o2Max": 35,
+    "flowLabel": "n/a",
+    "samples": 30,
+    "tags": ["heptane", "droplets", "extinction"],
+    "score": 74,
+    "breakdown": { "oxygen": 72, "materials": 40, "gravity": 80, "flow": 50 },
+    "findings": [],
+    "publications": []
+  },
+  {
+    "id": "same-r",
+    "name": "SAME-R",
+    "fullName": "Smoke Aerosol Measurement Experiment – Reflight",
+    "category": "Smoke detection",
+    "platform": "ISS",
+    "years": "2010–2012",
+    "year": 2010,
+    "fuels": [],
+    "materials": ["Teflon"],
+    "fuelLabel": "Smoke",
+    "o2Label": "21%",
+    "o2Max": 21,
+    "flowLabel": "n/a",
+    "samples": 16,
+    "tags": ["aerosol", "sensors"],
+    "score": 61,
+    "breakdown": { "oxygen": 50, "materials": 55, "gravity": 70, "flow": 45 },
+    "findings": [],
+    "publications": []
+  }
+]
