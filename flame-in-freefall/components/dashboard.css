@@ -1,0 +1,146 @@
+/* Main dashboard */
+
+.flame-dashboard {
+  min-height: 100vh;
+  color: #111827;
+  background: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+.dashboard-header {
+  background: #405875;
+  color: #fff;
+  padding: 22px 32px 17px;
+}
+
+.dashboard-heading {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.dashboard-heading h1 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.dashboard-heading > span {
+  color: #b9c8d9;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.dashboard-header p {
+  max-width: 920px;
+  margin: 6px 0 0;
+  color: #d4deea;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* Environment and fuel toolbars */
+
+.dashboard-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 55px;
+  padding: 9px 32px;
+  background: #fff;
+  border-bottom: 1px solid #d9e0e9;
+}
+
+.toolbar-label {
+  flex: 0 0 93px;
+  color: #647b99;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.environment-options,
+.fuel-options {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Environment buttons */
+
+.environment-tab,
+.fuel-chip,
+.clear-filters {
+  border: 1px solid #d6deea;
+  background: #fff;
+  color: #142033;
+  border-radius: 22px;
+  cursor: pointer;
+  font: inherit;
+  transition: background 0.15s ease;
+}
+
+.environment-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 32px;
+  padding: 6px 14px;
+  font-size: 12px;
+}
+
+.environment-tab small {
+  color: #77869a;
+  font-size: 10px;
+}
+
+.environment-tab.is-active,
+.fuel-chip.is-active {
+  background: #405875;
+  border-color: #405875;
+  color: #fff;
+}
+
+.environment-tab.is-active small {
+  color: #d4deea;
+}
+
+/* Fuel buttons */
+
+.fuel-toolbar {
+  min-height: 45px;
+}
+
+.fuel-chip {
+  min-height: 27px;
+  padding: 4px 11px;
+  font-size: 12px;
+}
+
+.fuel-chip span {
+  margin-left: 3px;
+  color: #8290a2;
+  font-size: 10px;
+}
+
+.fuel-chip.is-active span {
+  color: #d4deea;
+}
+
+.fuel-divider {
+  width: 1px;
+  height: 22px;
+  margin: 0 6px;
+  background: #d9e0e9;
+}
+
+.clear-filters {
+  padding: 5px 12px;
+  color: #647b99;
+  font-size: 12px;
+}
