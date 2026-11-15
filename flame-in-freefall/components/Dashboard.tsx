@@ -23,8 +23,9 @@ import type {
 } from "@/lib/types";
 
 import EnvironmentTabs from "@/components/EnvironmentTabs";
-import FuelChips from "@/components/FuelFilter";
+import FuelFilter from "@/components/FuelFilter";
 import EnvNote from "@/components/EnvNote";
+import RankingList from "@/components/RankingList";
 
 
 import "./dashboard.css";
@@ -54,6 +55,18 @@ export default function Dashboard({
   // Selected investigation
   const [selectedId, setSelectedId] = useState<string>(
     () => rankBy(initialEnvironment)[0]?.id ?? ""
+  );
+
+   // Sort and filter investigations
+  const rankedItems = useMemo(() => {
+    const ranked = rankBy(environment);
+
+    return filterByFuel(ranked, fuel);
+  }, [environment, fuel]);
+
+  // Find selected investigation in visible results
+  const selectedItem = rankedItems.find(
+    (item) => item.id === selectedId
   );
 
   // Change environment
@@ -141,12 +154,45 @@ export default function Dashboard({
 
       {/* Fuel filters */}
 
-      <FuelChips
+      <FuelFilter
         counts={fuelCounts()}
         selectedFuel={fuel}
         onChange={handleFuelChange}
         onClear={clearFilters}
       />
+
+ {/* Main dashboard content */}
+
+      <div className="dashboard-content">
+
+        {/* Left column */}
+
+        <section className="ranking-column">
+
+          <EnvNote
+            environment={environmentInfo}
+            measuredCount={evidenceCount}
+            totalCount={investigations.length}
+          />
+
+          <div className="ranking-summary">
+            <strong>{rankedItems.length}</strong>
+            {" "}investigations
+            <span> · </span>
+            Sorted by relevance
+          </div>
+
+          <RankingList
+            items={rankedItems}
+            environment={environment}
+            selectedId={selectedItem?.id ?? ""}
+            onSelect={setSelectedId}
+          />
+
+        </section>
+
+
+      </div>
 
     
     </main>
