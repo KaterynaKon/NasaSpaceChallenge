@@ -1,0 +1,58 @@
+[
+  {
+    "id": "cabin",
+    "label": "Spacecraft cabin",
+    "o2": "21%",
+    "pressure": "14.7 psia",
+    "flow": "20 cm/s",
+    "material": "solid",
+    "description": "Sea-level air at 14.7 psia with 21% oxygen, ventilated at roughly 20 cm/s. Everything that burns here is solid: fabrics, plastics, insulation, cable jackets.",
+    "assumption": "Ventilation speed is a design value, not a measured ISS number.",
+    "sources": [
+      { "label": "Challenge statement", "url": "https://www.spaceappschallenge.org/2026/challenges/" },
+      { "label": "NASA-STD-3001, ventilation requirements", "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-3001" }
+    ]
+  },
+  {
+    "id": "habitat",
+    "label": "Surface habitat",
+    "o2": "34%",
+    "pressure": "8.2 psia",
+    "flow": "10 cm/s",
+    "material": "solid",
+    "description": "NASA's exploration atmosphere: 8.2 psia with about 34% oxygen. The challenge statement allows 30% oxygen or more at 10.2 psia or less, so this sits inside that window. Solid materials dominate, as in the cabin.",
+    "assumption": "The same atmosphere is used for both Moon and Mars; the two were merged into one environment.",
+    "sources": [
+      { "label": "NASA OCHMO-TB-003, habitable atmosphere", "url": "https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-003-habitable-atmosphere.pdf" },
+      { "label": "NTRS: exploration atmosphere recommendation", "url": "https://ntrs.nasa.gov/citations/20240003211" }
+    ]
+  },
+  {
+    "id": "suit",
+    "label": "Space suit",
+    "o2": "100%",
+    "pressure": "4.3 psia",
+    "flow": "5 cm/s",
+    "material": "solid",
+    "description": "Pure oxygen at 4.3 psia. The highest oxygen concentration and the lowest pressure of the four environments, which makes almost any material flammable. Ventilation is weak compared with a cabin.",
+    "assumption": "Airflow is an estimate; suits have little forced circulation.",
+    "sources": [
+      { "label": "Challenge statement (suit: 100% O2, 4.3 psi)", "url": "https://www.spaceappschallenge.org/2026/challenges/" },
+      { "label": "NASA EVA suit operating pressure", "url": "https://www.nasa.gov/humans-in-space/spacesuits/" }
+    ]
+  },
+  {
+    "id": "rover",
+    "label": "Rover / vehicle",
+    "o2": "34%",
+    "pressure": "8.2 psia",
+    "flow": "40 cm/s",
+    "material": "liquid",
+    "description": "Same exploration atmosphere as the habitat, but a pressurized rover also carries liquid fuel lines. That is why liquid fuels matter here while fabrics and plastics matter in the cabin.",
+    "assumption": "Airflow is higher because a vehicle moves air for cooling; this is a reasoned estimate, not a published figure.",
+    "sources": [
+      { "label": "Challenge statement (pressurized rover)", "url": "https://www.spaceappschallenge.org/2026/challenges/" },
+      { "label": "NASA OCHMO-TB-003", "url": "https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-003-habitable-atmosphere.pdf" }
+    ]
+  }
+]
