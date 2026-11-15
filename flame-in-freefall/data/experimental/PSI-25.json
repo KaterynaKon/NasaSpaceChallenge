@@ -1,0 +1,45 @@
+{
+ "id": "PSI-25",
+ "files": [
+  {
+   "file": "PSI-25_Experimentaltable_BASS-II.csv",
+   "rows": 129,
+   "columns": 17,
+   "mapping": {
+    "o2": "Calibrated  initial O2 % by vol",
+    "material": "Fuel Sample Material"
+   },
+   "o2_pct": [
+    13.6,
+    22.2
+   ],
+   "pressure_psia": null,
+   "flow_cm_s": null,
+   "size_mm": [
+    0.1,
+    0.4
+   ],
+   "materials": [
+    "0.5\" black rod",
+    "1 cm 0.2 mm PMMA film",
+    "1 cm SIBAL",
+    "1 cm SIBAL top side ign",
+    "1 cm wide 200 micron thick PMMA",
+    "1 cm wide PMMA 1 mm thick"
+   ],
+   "kind": "per_test"
+  }
+ ],
+ "combined": {
+  "o2_pct": [
+   13.6,
+   22.2
+  ],
+  "pressure_psia": null,
+  "flow_cm_s": null,
+  "size_mm": [
+   0.1,
+   0.4
+  ]
+ }
+}

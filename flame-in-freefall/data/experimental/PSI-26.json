@@ -1,0 +1,41 @@
+{
+ "id": "PSI-26",
+ "files": [
+  {
+   "file": "PSI-26_Experimentaltable_BASS.csv",
+   "rows": 122,
+   "columns": 6,
+   "mapping": {
+    "material": "Fuel Sample Material"
+   },
+   "o2_pct": null,
+   "pressure_psia": null,
+   "flow_cm_s": null,
+   "size_mm": [
+    10.0,
+    20.0
+   ],
+   "materials": [
+    "1 cm sphere",
+    "1 cm sphere wake",
+    "1 cm wake sphere",
+    "2 cm pmma sphere",
+    "2 cm sphere",
+    "2 cm sphere wake ign",
+    "Japan Wax Candle wake",
+    "Nomex III Natural"
+   ],
+   "kind": "per_test",
+   "note": "Samples only; atmosphere and flow are not in this table."
+  }
+ ],
+ "combined": {
+  "o2_pct": null,
+  "pressure_psia": null,
+  "flow_cm_s": null,
+  "size_mm": [
+   10.0,
+   20.0
+  ]
+ }
+}

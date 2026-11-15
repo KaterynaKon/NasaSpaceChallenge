@@ -1,0 +1,129 @@
+{
+ "PSI-25": {
+  "summary": "Flames on PMMA rods in microgravity are globally stoichiometric at higher oxygen concentrations, but become fuel-rich near the minimum oxygen limit due to excess pyrolyzate leakage. Extinction is driven by two distinct mechanisms: blowoff initiated by a hole forming in the stagnation region, and low-flow quenching where surface radiative losses dominate. The transition from blowoff to quenching occurs when convective flows become the same order of magnitude as diffusive flows, shifting the critical Damkohler number limitations.",
+  "links": [
+   "https://www.sciencedirect.com/science/article/abs/pii/S1540748914002831?via%3Dihub",
+   "https://www.sciencedirect.com/science/article/abs/pii/S0379711215300424?via%3Dihub",
+   "https://www.sciencedirect.com/science/article/abs/pii/S1540748914000960?via%3Dihub",
+   "https://www.sciencedirect.com/science/article/abs/pii/S0010218017300846?via%3Dihub"
+  ],
+  "dois": [],
+  "verified": true,
+  "source": "team",
+  "table_downloaded": "yes"
+ },
+ "PSI-26": {
+  "summary": "In microgravity environments, flames can survive under near-limit low oxygen conditions by breaking into isolated, long-lasting flamelets that can rapidly reignite if oxygen is reintroduced. Additionally, under specific opposed-flow conditions,bulk combustible materials like PMMA can burn much faster in space than they do in normal gravity. Consequently, these factors indicate a significantly higher fire risk in spacecraft, requiring larger amounts of extinguishing agents to sufficiently lower oxygen levels for complete extinction.",
+  "links": [
+   "https://doi.org/10.1511/2016.118.44",
+   "https://doi.org/10.1016/j.firesaf.2015.11.011",
+   "https://doi.org/10.1016/j.combustflame.2015.10.023",
+   "https://doi.org/10.1016/j.proci.2014.06.125",
+   "https://doi.org/10.1016/j.proci.2016.06.025"
+  ],
+  "dois": [
+   "10.1511/2016.118.44",
+   "10.1016/j.firesaf.2015.11.011",
+   "10.1016/j.combustflame.2015.10.023",
+   "10.1016/j.proci.2014.06.125",
+   "10.1016/j.proci.2016.06.025"
+  ],
+  "verified": true,
+  "source": "team",
+  "table_downloaded": "not found"
+ },
+ "PSI-98": {
+  "summary": "Large-scale microgravity experiments reveal that flame spread rates, heat release, and soot formation are significantly enhanced by specific combinations of elevated oxygen concentration and low-velocity airflows. Furthermore, findings demonstrate that traditional small-scale terrestrial testing is inadequate for predicting spacecraft fire behavior, as actual geometric scale and material structure drastically alter fire growth dynamics. Consequently, accurate spacecraft fire safety assessments require full-scale testing to properly determine material flammability limits and necessary suppression protocols.",
+  "links": [
+   "https://doi.org/10.1016/j.combustflame.2018.10.012",
+   "https://doi.org/10.1016/j.proci.2018.05.168",
+   "https://doi.org/10.1016/j.actaastro.2014.11.025"
+  ],
+  "dois": [
+   "10.1016/j.combustflame.2018.10.012",
+   "10.1016/j.proci.2018.05.168",
+   "10.1016/j.actaastro.2014.11.025"
+  ],
+  "verified": true,
+  "source": "team",
+  "table_downloaded": "yes"
+ },
+ "PSI-99": {
+  "summary": "Low-cost electrochemical CO and metal oxide VOC sensors can reliably detect early-stage fire emissions from spacecraft materials while distinguishing them from non-combustion nuisance sources. Unlike in normal gravity where upward flames continuously accelerate, concurrent-flow flames in microgravity reach a steady state with a definite limiting length. The existence of a microgravity flame size limit makes spacecraft flashover unlikely at low ventilation speeds, though prolonged burning can still generate significant fuel vapor.",
+  "links": [
+   "https://www.sciencedirect.com/science/article/abs/pii/S0379711219306137?via%3Dihub",
+   "https://www.sciencedirect.com/science/article/abs/pii/S1540748918301743?via%3Dihub",
+   "https://link.springer.com/article/10.1007/s10694-019-00863-3",
+   "https://www.sciencedirect.com/science/article/abs/pii/S0010218018304395?via%3Dihub"
+  ],
+  "dois": [
+   "10.1007/s10694-019-00863-3"
+  ],
+  "verified": true,
+  "source": "team",
+  "table_downloaded": "yes"
+ },
+ "PSI-100": {
+  "summary": "No DOI found but here’s key findings based on the experiment preview: Full-scale microgravity testing successfully determines the true flammability limits of spacecraft materials, revealing how reduced gravity and limited oxygen directly affect flame size and growth dynamics. These critical baseline results validate NASA's material selection criteria and significantly improve fire prevention strategies for confined, sealed environments both in space and on Earth.\"",
+  "links": [],
+  "dois": [],
+  "verified": false,
+  "source": "team",
+  "table_downloaded": "yes"
+ },
+ "PSI-69": {
+  "summary": "Microgravity droplet combustion experiments revealed the existence of a 'cool flame' regime, where fuel droplets continue to burn steadily at significantly lower temperatures even after the visible hot flame extinguishes. Furthermore,testing with various inert gases demonstrated that terrestrial flammability models fail to accurately predict true extinction limits in space. These findings establish the precise Limiting Oxygen Index (LOI) required to effectively design and calibrate spacecraft fire suppression systems.",
+  "links": [
+   "https://doi.org/10.2514/6.2012-1252",
+   "https://doi.org/10.1016/j.combustflame.2011.06.014",
+   "https://doi.org/10.1016/j.combustflame.2013.05.011",
+   "https://doi.org/10.2514/6.2014-1019",
+   "https://doi.org/10.1016/j.combustflame.2013.09.011",
+   "https://doi.org/10.1007/978-81-322-2211-8_16"
+  ],
+  "dois": [
+   "10.2514/6.2012-1252",
+   "10.1016/j.combustflame.2011.06.014",
+   "10.1016/j.combustflame.2013.05.011",
+   "10.2514/6.2014-1019",
+   "10.1016/j.combustflame.2013.09.011",
+   "10.1007/978-81-322-2211-8_16"
+  ],
+  "verified": true,
+  "source": "team",
+  "table_downloaded": "yes"
+ },
+ "PSI-68": {
+  "summary": "FLEX experiments on the ISS demonstrated both radiative and diffusive extinction for isolated heptane and methanol droplets under prolonged microgravity conditions. A novel two-stage combustion regime was discovered for large heptane droplets, where after the visible hot flame radiatively extinguishes, the droplet continues to burn via a low-temperature \"cool flame\". The Limiting Oxygen Index (LOI)—the minimum oxygen concentration required to sustain quasi-steady combustion—was determined to be approximately 0.12 for methanol and 0.15 for heptane in O2/N2 mixtures.",
+  "links": [
+   "https://www.sciencedirect.com/science/article/abs/pii/S0010218019301725?via%3Dihub",
+   "https://www.sciencedirect.com/science/article/abs/pii/S001021801300343X?via%3Dihub",
+   "https://www.sciencedirect.com/science/article/abs/pii/S0010218019304936?via%3Dihub",
+   "https://www.tandfonline.com/doi/full/10.1080/00102202.2016.1225730",
+   "https://www.sciencedirect.com/science/article/abs/pii/S0010218012002131?via%3Dihub",
+   "https://link.springer.com/article/10.1007/s12217-014-9372-2"
+  ],
+  "dois": [
+   "10.1080/00102202.2016.1225730",
+   "10.1007/s12217-014-9372-2",
+   "10.2514/6.2014-1019"
+  ],
+  "verified": true,
+  "source": "team",
+  "table_downloaded": "yes"
+ },
+ "PSI-159": {
+  "summary": "Microgravity experiments successfully demonstrated the stabilization of gas-fueled cool diffusion flames in both spherical and stagnation flows. Results indicate that burner temperature critically influences the behavior of these flames, which predominantly reside and survive in fuel-rich regions. These baseline observations provide crucial data for validating the chemical kinetic models needed to design next-generation, high-efficiency engines.",
+  "links": [
+   "https://doi.org/10.1016/j.proci.2022.07.015",
+   "https://doi.org/10.1016/j.combustflame.2023.112852"
+  ],
+  "dois": [
+   "10.1016/j.proci.2022.07.015",
+   "10.1016/j.combustflame.2023.112852"
+  ],
+  "verified": true,
+  "source": "team",
+  "table_downloaded": "yes"
+ }
+}

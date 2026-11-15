@@ -1,0 +1,102 @@
+{
+ "id": "PSI-10",
+ "files": [
+  {
+   "file": "PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+   "rows": 206,
+   "columns": [
+    "Flame Type",
+    "Day",
+    "Fuel",
+    "Test",
+    "Xfuel",
+    "mfuel (mg/s)",
+    "mN2 (mg/s)",
+    "mtot (mg/s)",
+    "XO2 (init)",
+    "XO2 (final)",
+    "pinit (atm)",
+    "pfinal (atm)",
+    "pmean (atm)",
+    "mean Zst",
+    "Tad (K)\r"
+   ],
+   "detected": {
+    "o2": "XO2 (init)",
+    "pressure": "pmean (atm)",
+    "flow": null,
+    "size": null
+   },
+   "o2_pct": [
+    19.8,
+    40.0
+   ],
+   "pressure_psia": [
+    13.7,
+    19.26
+   ],
+   "flow_cm_s": null,
+   "size_mm": null,
+   "counts": {
+    "o2": 206,
+    "pressure": 206,
+    "flow": 0,
+    "size": 0
+   }
+  },
+  {
+   "file": "PSI-10_Experimentaltable_FlameDesign_InverseFlame.csv",
+   "rows": 120,
+   "columns": [
+    "Flame Type",
+    "Day",
+    "Test",
+    "XO2",
+    "mO2 (mg/s)",
+    "mN2 (mg/s)",
+    "mtot (mg/s)",
+    "XC2H4 initial",
+    "XC2H4 final",
+    "pinit (atm)",
+    "pfinal (atm)",
+    "pmean (atm)",
+    "mean Zst",
+    "Tad (K)"
+   ],
+   "detected": {
+    "o2": "XO2",
+    "pressure": "pmean (atm)",
+    "flow": null,
+    "size": null
+   },
+   "o2_pct": [
+    21.2,
+    85.0
+   ],
+   "pressure_psia": [
+    6.26,
+    44.35
+   ],
+   "flow_cm_s": null,
+   "size_mm": null,
+   "counts": {
+    "o2": 109,
+    "pressure": 120,
+    "flow": 0,
+    "size": 0
+   }
+  }
+ ],
+ "combined": {
+  "o2_pct": [
+   19.8,
+   85.0
+  ],
+  "pressure_psia": [
+   6.26,
+   44.35
+  ],
+  "flow_cm_s": null,
+  "size_mm": null
+ }
+}
