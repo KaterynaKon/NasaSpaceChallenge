@@ -1,87 +1,43 @@
-/*import type { Dimension } from "@/lib/types";
-
-type Props = {
-  dimension: Dimension;
-  onDimension: (d: Dimension) => void;
-  options: string[];
-  value: string | null;
-  onValue: (v: string | null) => void;
-};
-
-const chip = (active: boolean) =>
-  `rounded-md border px-3 py-1.5 text-xs capitalize transition ${
-    active
-      ? "border-orange-500 bg-orange-50 font-medium text-orange-600"
-      : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
-  }`;
-
-export default function EnvironmentTabs({ dimension, onDimension, options, value, onValue }: Props) {
-  const allLabel = dimension === "fuel" ? "All fuels" : "All materials";
-  return (
-    <div className="flex flex-wrap items-center gap-3 border-b border-slate-200 bg-white px-6 py-3">
-      <span className="text-xs text-slate-500">Filter by</span>
-
-      <div className="flex gap-1.5">
-        {(["fuel", "material"] as Dimension[]).map((d) => (
-          <button
-            key={d}
-            onClick={() => {
-              onDimension(d);
-              onValue(null);
-            }}
-            className={`rounded-md px-3 py-1.5 text-xs font-medium capitalize ${
-              dimension === d ? "bg-orange-500 text-white" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
-            }`}
-          >
-            {d}
-          </button>
-        ))}
-      </div>
-
-      <div className="flex flex-wrap gap-1.5">
-        <button onClick={() => onValue(null)} className={chip(value === null)}>
-          {allLabel}
-        </button>
-        {options.map((o) => (
-          <button key={o} onClick={() => onValue(o)} className={chip(value === o)}>
-            {o}
-          </button>
-        ))}
-      </div>
-
-      <button
-        onClick={() => onValue(null)}
-        className="ml-auto rounded-md border border-slate-200 px-3 py-1.5 text-xs text-slate-600 hover:bg-slate-50"
-      >
-        Clear filters
-      </button>
-    </div>
-  );
-}*/
 "use client";
 
-import { environments, DEFAULT_ENV } from "@/lib/data";
-import type { EnvironmentInfo } from "@/lib/types";
+import type { Environment, EnvironmentInfo } from "@/lib/types";
 
 type Props = {
-  active: EnvironmentInfo["id"];
-  onChange: (id: EnvironmentInfo["id"]) => void;
+  environments: EnvironmentInfo[];
+  activeEnvironment: Environment;
+  onChange: (environment: Environment) => void;
 };
 
-export default function EnvironmentTabs({ active, onChange }: Props) {
+export default function EnvironmentTabs({
+  environments,
+  activeEnvironment,
+  onChange,
+}: Props) {
   return (
-    <nav className="tabs">
-      {environments.map((e) => (
-        <button
-          key={e.id}
-          onClick={() => onChange(e.id)}
-          aria-pressed={e.id === active}
-        >
-          {e.label}
-          <span>{e.o2} · {e.pressure}</span>
-        </button>
-      ))}
-    </nav>
+    <section className="dashboard-toolbar environment-toolbar">
+      <span className="toolbar-label">Environment</span>
+
+      <div className="environment-options">
+        {environments.map((environment) => (
+          <button
+            key={environment.id}
+            type="button"
+            className={`environment-tab ${
+              activeEnvironment === environment.id ? "is-active" : ""
+            }`}
+            onClick={() => onChange(environment.id)}
+            aria-pressed={activeEnvironment === environment.id}
+          >
+            <span>{environment.label}</span>
+            <small>
+              {environment.o2} O₂ · {environment.pressure}
+            </small>
+          </button>
+        ))}
+      </div>
+    </section>
   );
 }
+
+
 
