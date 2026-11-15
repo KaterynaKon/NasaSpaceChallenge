@@ -15,7 +15,7 @@ export default function DetailPanel({ item, env, envInfo }: Props) {
     ["Platform", item.platform || "—"],
     ["Hardware", item.hardware.name || "—"],
     ["Fuel type", item.fuelLabel || "—"],
-    ["Materials", item.testedMaterials.join(", ") || "—"],
+    ["Materials", item.testedMaterials?.join(", ") || "—"],
     ["O₂ measured", item.o2Label],
     ["Pressure", item.pressureLabel],
     ["Airflow", item.flowLabel],
@@ -24,8 +24,8 @@ export default function DetailPanel({ item, env, envInfo }: Props) {
     ["Data files", `${item.dataFiles.count} · ${item.dataFiles.sizeGb} GB`],
   ];
 
-  const parts = item.scoreParts[env] ?? [];
-  const score = item.scores[env];
+const parts = item.scoreParts?.[env] ?? [];
+const score = item.scores?.[env] ?? item.score;
 
   return (
     <aside className="sticky top-16 h-fit max-h-[calc(100vh-90px)] overflow-auto rounded-xl border border-line bg-white p-5">

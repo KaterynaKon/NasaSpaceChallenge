@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  useMemo,
-  useState,
-  type ReactNode,
-} from "react";
+import { useMemo, useState } from "react";
 
 import {
   DEFAULT_ENV,
@@ -13,63 +9,42 @@ import {
   fuelCounts,
   investigations,
   rankBy,
-  countWithTable,
   type FuelKey,
 } from "@/lib/data";
 
 import type {
   Environment,
-  Investigation,
 } from "@/lib/types";
 
 import EnvironmentTabs from "@/components/EnvironmentTabs";
 import FuelFilter from "@/components/FuelFilter";
 import EnvNote from "@/components/EnvNote";
 import RankingList from "@/components/RankingList";
-
+import DetailPanel from "@/components/DetailPanel";
 
 import "./dashboard.css";
 
-type DashboardProps = {
-  renderDetails?: (
-    selected: Investigation | undefined
-  ) => ReactNode;
-
-  initialEnvironment?: Environment;
-  initialFuel?: FuelKey;
-};
-export default function Dashboard({
-  renderDetails,
-  initialEnvironment = DEFAULT_ENV,
-  initialFuel = "all",
-}: DashboardProps) {
-
-  // Selected environment
+export default function Dashboard() {
   const [environment, setEnvironment] =
-    useState<Environment>(initialEnvironment);
+    useState<Environment>(DEFAULT_ENV);
 
-  // Selected fuel filter
   const [fuel, setFuel] =
-    useState<FuelKey>(initialFuel);
+    useState<FuelKey>("all");
 
-  // Selected investigation
-  const [selectedId, setSelectedId] = useState<string>(
-    () => rankBy(initialEnvironment)[0]?.id ?? ""
-  );
+  const [selectedId, setSelectedId] =
+    useState<string>(() => rankBy(DEFAULT_ENV)[0]?.id ?? "");
 
-   // Sort and filter investigations
   const rankedItems = useMemo(() => {
-    const ranked = rankBy(environment);
-
-    return filterByFuel(ranked, fuel);
+    return filterByFuel(rankBy(environment), fuel);
   }, [environment, fuel]);
 
-  // Find selected investigation in visible results
-  const selectedItem = rankedItems.find(
-    (item) => item.id === selectedId
-  );
+  const selectedItem =
+    rankedItems.find((item) => item.id === selectedId) ?? null;
 
-  // Change environment
+  const environmentInfo =
+    environments.find((item) => item.id === environment) ??
+    environments[0];
+
   const handleEnvironmentChange = (
     nextEnvironment: Environment
   ) => {
@@ -83,7 +58,6 @@ export default function Dashboard({
     setSelectedId(nextList[0]?.id ?? "");
   };
 
-  // Change fuel filter
   const handleFuelChange = (nextFuel: FuelKey) => {
     setFuel(nextFuel);
 
@@ -92,46 +66,31 @@ export default function Dashboard({
       nextFuel
     );
 
-    if (
-      !nextList.some((item) => item.id === selectedId)
-    ) {
+    if (!nextList.some((item) => item.id === selectedId)) {
       setSelectedId(nextList[0]?.id ?? "");
     }
   };
 
-  // Clear fuel filter
   const clearFilters = () => {
     setFuel("all");
 
     const nextList = rankBy(environment);
-
     setSelectedId(nextList[0]?.id ?? "");
   };
 
-  // Data for environment note
-  const environmentInfo = environments.find(
-    (item) => item.id === environment
-  ) ?? environments[0];
-
-  const reportCount = investigations.filter(
-    (item) => item.badge === "from report"
+  const evidenceCount = investigations.filter(
+    (item) =>
+      item.badge === "table parsed" ||
+      item.badge === "from report"
   ).length;
-
-  const evidenceCount = countWithTable() + reportCount;
 
   return (
     <main className="flame-dashboard">
 
-      {/* Header */}
-
       <header className="dashboard-header">
-
         <div className="dashboard-heading">
           <h1>Flame in Freefall</h1>
-
-          <span>
-            Fire Safety Explorer · NASA PSI
-          </span>
+          <span>Fire Safety Explorer · NASA PSI</span>
         </div>
 
         <p>
@@ -141,18 +100,13 @@ export default function Dashboard({
           is a sum of five explicit components you can
           inspect.
         </p>
-
       </header>
-
-      {/* Environment selection */}
 
       <EnvironmentTabs
         environments={environments}
         activeEnvironment={environment}
         onChange={handleEnvironmentChange}
       />
-
-      {/* Fuel filters */}
 
       <FuelFilter
         counts={fuelCounts()}
@@ -161,11 +115,7 @@ export default function Dashboard({
         onClear={clearFilters}
       />
 
- {/* Main dashboard content */}
-
       <div className="dashboard-content">
-
-        {/* Left column */}
 
         <section className="ranking-column">
 
@@ -191,11 +141,18 @@ export default function Dashboard({
 
         </section>
 
+        <section className="details-column">
+
+          <DetailPanel
+            item={selectedItem}
+            env={environment}
+            envInfo={environmentInfo}
+          />
+
+        </section>
 
       </div>
 
-    
     </main>
-    
   );
 }
