@@ -1,0 +1,48 @@
+{
+ "id": "PSI-69",
+ "files": [
+  {
+   "file": "PSI-69_Experimentaltable_FLEX.csv",
+   "rows": 274,
+   "columns": 15,
+   "mapping": {
+    "o2": "O initial ambient composition; mole fraction",
+    "pressure": "Ambient pressure; mmHg",
+    "size": "Droplet initial diameter; mm"
+   },
+   "o2_pct": [
+    12.0,
+    34.0
+   ],
+   "pressure_psia": [
+    10.177,
+    44.8594
+   ],
+   "flow_cm_s": null,
+   "size_mm": [
+    1.1,
+    4.67
+   ],
+   "materials": [
+    "Heptane",
+    "Methanol"
+   ],
+   "kind": "per_test"
+  }
+ ],
+ "combined": {
+  "o2_pct": [
+   12.0,
+   34.0
+  ],
+  "pressure_psia": [
+   10.177,
+   44.8594
+  ],
+  "flow_cm_s": null,
+  "size_mm": [
+   1.1,
+   4.67
+  ]
+ }
+}

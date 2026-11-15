@@ -1,0 +1,60 @@
+{
+ "id": "PSI-68",
+ "files": [
+  {
+   "file": "PSI-68_Experimentaltable_Flex2.csv",
+   "rows": 8,
+   "columns": 7,
+   "mapping": {
+    "o2": "Oxygen Mole Fraction",
+    "pressure": "Ambient Pressure (atm)",
+    "size": "Initial Droplet Diameter (mm)",
+    "flow": "Flow Velocity (cm/s)"
+   },
+   "o2_pct": [
+    17.0,
+    30.0
+   ],
+   "pressure_psia": [
+    7.3479,
+    44.0877
+   ],
+   "flow_cm_s": [
+    0.1,
+    5.0
+   ],
+   "size_mm": [
+    1.5,
+    5.0
+   ],
+   "materials": [
+    "Decane (pure)",
+    "Ethanol (pure)",
+    "Heptane (50%) IsoOctane (50%) (mixture)",
+    "Heptane (pure)",
+    "IsoOctane (pure)",
+    "Propanol (80%) Glycerol (20%) (mixture)"
+   ],
+   "kind": "matrix",
+   "note": "Summary table of planned ranges, not per-test rows."
+  }
+ ],
+ "combined": {
+  "o2_pct": [
+   17.0,
+   30.0
+  ],
+  "pressure_psia": [
+   7.3479,
+   44.0877
+  ],
+  "flow_cm_s": [
+   0.1,
+   5.0
+  ],
+  "size_mm": [
+   1.5,
+   5.0
+  ]
+ }
+}

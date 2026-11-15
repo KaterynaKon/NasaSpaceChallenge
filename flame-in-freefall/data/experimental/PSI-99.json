@@ -1,0 +1,46 @@
+{
+ "id": "PSI-99",
+ "files": [
+  {
+   "file": "PSI-99_Experimentaltable_SAFFIRE-2.csv",
+   "rows": 15,
+   "columns": 17,
+   "mapping": {
+    "o2": "Percent O2 (Note 1)",
+    "flow": "Air Flow (cm/s)"
+   },
+   "o2_pct": [
+    21.5,
+    22.1
+   ],
+   "pressure_psia": null,
+   "flow_cm_s": [
+    20.0,
+    20.0
+   ],
+   "size_mm": null,
+   "materials": [
+    "Cotton-Fiberglass (SIBAL)",
+    "PMMA",
+    "PMMA & Nomex",
+    "Pre-test flow visulation data for sample 2-1",
+    "Pre-test flow visulation data for sample 2-2",
+    "Silicone"
+   ],
+   "note": null,
+   "kind": "per_test"
+  }
+ ],
+ "combined": {
+  "o2_pct": [
+   21.5,
+   22.1
+  ],
+  "pressure_psia": null,
+  "flow_cm_s": [
+   20.0,
+   20.0
+  ],
+  "size_mm": null
+ }
+}

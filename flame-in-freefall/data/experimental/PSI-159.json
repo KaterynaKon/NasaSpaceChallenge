@@ -1,0 +1,70 @@
+{
+ "id": "PSI-159",
+ "files": [
+  {
+   "file": "PSI-159_Experimentaltable_CFI-G_InverseFlames.csv",
+   "rows": 154,
+   "columns": 20,
+   "mapping": {
+    "o2": "XO2",
+    "pressure": "approx p (bar)"
+   },
+   "o2_pct": [
+    12.0,
+    85.0
+   ],
+   "pressure_psia": [
+    7.1849,
+    48.0061
+   ],
+   "flow_cm_s": null,
+   "size_mm": null,
+   "materials": [
+    "butane",
+    "ethane",
+    "propane"
+   ],
+   "kind": "per_test"
+  },
+  {
+   "file": "PSI-159_Experimentaltable_CFI-G_NormalFlames.csv",
+   "rows": 179,
+   "columns": 18,
+   "mapping": {
+    "o2": "XO2 before test",
+    "pressure": "approx p (bar)"
+   },
+   "o2_pct": [
+    17.9686,
+    39.97
+   ],
+   "pressure_psia": [
+    7.3484,
+    44.0901
+   ],
+   "flow_cm_s": null,
+   "size_mm": null,
+   "materials": [
+    "30% butane",
+    "30% ethane",
+    "30% propane",
+    "50% butane",
+    "ethane",
+    "propane"
+   ],
+   "kind": "per_test"
+  }
+ ],
+ "combined": {
+  "o2_pct": [
+   12.0,
+   85.0
+  ],
+  "pressure_psia": [
+   7.1849,
+   48.0061
+  ],
+  "flow_cm_s": null,
+  "size_mm": null
+ }
+}

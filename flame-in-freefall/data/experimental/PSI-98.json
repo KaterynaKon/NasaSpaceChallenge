@@ -1,0 +1,43 @@
+{
+ "id": "PSI-98",
+ "files": [
+  {
+   "file": "PSI-98_Experimentaltable_SAFFIRE-1.csv-Foglio1.csv",
+   "rows": 4,
+   "columns": 13,
+   "mapping": {
+    "o2": "Percent O2",
+    "flow": "Air Flow (cm/s)"
+   },
+   "o2_pct": [
+    21.5,
+    21.7
+   ],
+   "pressure_psia": null,
+   "flow_cm_s": [
+    20.0,
+    20.0
+   ],
+   "size_mm": null,
+   "materials": [
+    "Pre-test flow visulation data for sample 1",
+    "Pre-test flow visulation data for sample 2",
+    "SIBAL Fabric"
+   ],
+   "note": null,
+   "kind": "per_test"
+  }
+ ],
+ "combined": {
+  "o2_pct": [
+   21.5,
+   21.7
+  ],
+  "pressure_psia": null,
+  "flow_cm_s": [
+   20.0,
+   20.0
+  ],
+  "size_mm": null
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "id": "PSI-100",
+ "files": [
+  {
+   "file": "PSI-100_Experimentaltable_SAFFIRE-3.csv",
+   "rows": 2,
+   "columns": 9,
+   "mapping": {
+    "o2": null,
+    "flow": "Air Flow"
+   },
+   "o2_pct": null,
+   "pressure_psia": null,
+   "flow_cm_s": [
+    30.0,
+    30.0
+   ],
+   "size_mm": null,
+   "materials": [
+    "SIBAL Fabric"
+   ],
+   "note": "Table has no oxygen column; only airflow is stated.",
+   "kind": "per_test"
+  }
+ ],
+ "combined": {
+  "o2_pct": null,
+  "pressure_psia": null,
+  "flow_cm_s": [
+   30.0,
+   30.0
+  ],
+  "size_mm": null
+ }
+}
