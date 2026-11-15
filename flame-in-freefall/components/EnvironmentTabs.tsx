@@ -1,4 +1,4 @@
-import type { Dimension } from "@/lib/types";
+/*import type { Dimension } from "@/lib/types";
 
 type Props = {
   dimension: Dimension;
@@ -9,7 +9,7 @@ type Props = {
 };
 
 const chip = (active: boolean) =>
-  `rounded-md border px-3 py-1.5 text-xs transition ${
+  `rounded-md border px-3 py-1.5 text-xs capitalize transition ${
     active
       ? "border-orange-500 bg-orange-50 font-medium text-orange-600"
       : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
@@ -57,4 +57,31 @@ export default function EnvironmentTabs({ dimension, onDimension, options, value
       </button>
     </div>
   );
+}*/
+"use client";
+
+import { environments, DEFAULT_ENV } from "@/lib/data";
+import type { EnvironmentInfo } from "@/lib/types";
+
+type Props = {
+  active: EnvironmentInfo["id"];
+  onChange: (id: EnvironmentInfo["id"]) => void;
+};
+
+export default function EnvironmentTabs({ active, onChange }: Props) {
+  return (
+    <nav className="tabs">
+      {environments.map((e) => (
+        <button
+          key={e.id}
+          onClick={() => onChange(e.id)}
+          aria-pressed={e.id === active}
+        >
+          {e.label}
+          <span>{e.o2} · {e.pressure}</span>
+        </button>
+      ))}
+    </nav>
+  );
 }
+
