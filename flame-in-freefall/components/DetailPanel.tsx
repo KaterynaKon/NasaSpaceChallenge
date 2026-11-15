@@ -28,8 +28,7 @@ const parts = item.scoreParts?.[env] ?? [];
 const score = item.scores?.[env] ?? item.score;
 
   return (
-    <aside className="sticky top-16 h-fit max-h-[calc(100vh-90px)] overflow-auto rounded-xl border border-line bg-white p-5">
-
+   <aside className="rounded-xl border border-line bg-white p-5">
       <h2 className="mb-1 text-[17px] font-semibold leading-snug tracking-[-0.2px] text-ink">
         {item.name} — {item.fullName}
       </h2>
