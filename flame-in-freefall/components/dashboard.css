@@ -3,42 +3,64 @@
 .flame-dashboard {
   min-height: 100vh;
   color: #111827;
-  background: #f4f6f9;
+  background: #D8E0EB;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Header */
 
 .dashboard-header {
-  background: #405875;
+   background-image:
+    linear-gradient(
+      rgba(10, 25, 45, 0.55),
+      rgba(10, 25, 45, 0.55)
+    ),
+    url("/images/header-background.jpg");
+
+  background-size: cover, 40%;
+  background-position: center;
+  background-repeat: repeat;
+
   color: #fff;
   padding: 22px 32px 17px;
 }
 
 .dashboard-heading {
   display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 14px;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .dashboard-heading h1 {
   margin: 0;
   font-size: 21px;
   font-weight: 700;
+  line-height:1.1;
 }
-
-.dashboard-heading > span {
-  color: #b9c8d9;
+.dashboard-eyebrow {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
   font-size: 11px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
+.eyebrow-icon {
+  font-size: 16px;
+  color: #FF8656;
+  flex-shrink: 0;
+}
+.eyebrow-name {
+  color: #fff;
+}
+.eyebrow-tag {
+   color: #FF8656;
+}
 
 .dashboard-header p {
   max-width: 920px;
-  margin: 6px 0 0;
-  color: #d4deea;
+  margin: 10px 0 0;
+  color: #D8E0EB;
   font-size: 13px;
   line-height: 1.55;
 }
@@ -52,7 +74,7 @@
   min-height: 55px;
   padding: 9px 32px;
   background: #fff;
-  border-bottom: 1px solid #d9e0e9;
+  border-bottom: 1px solid #D8E0EB;
 }
 
 .toolbar-label {
@@ -69,14 +91,15 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
+  padding:5px;
 }
 
 /* Environment buttons */
 
-.environment-tab,
+
 .fuel-chip,
 .clear-filters {
-  border: 1px solid #d6deea;
+  border: 1px solid #D8E0EB;
   background: #fff;
   color: #142033;
   border-radius: 22px;
@@ -89,17 +112,51 @@
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  min-height: 32px;
-  padding: 6px 14px;
+  min-width: 230px;
+  padding: 5px 14px;
   font-size: 12px;
+  background: #fff;
+  border: 1px solid #D8E0EB;
+  border-radius: 10px;
+  color: #142033;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.environment-name {
+  font-size: 14px;
+  padding:5px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .environment-tab small {
-  color: #77869a;
+  color: #BD4A20;
+    padding:5px;
   font-size: 10px;
+  line-height: 1.2;
+}
+.environment-tab:hover {
+  border-color: #BD4A20;
+}
+.environment-icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: #BD4A20;
+}
+.environment-tab.is-active {
+  background: #fdf1ec;
+  border-color: #BD4A20;
+  color: #142033;
 }
 
-.environment-tab.is-active,
+.environment-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
 .fuel-chip.is-active {
   background: #405875;
   border-color: #405875;
@@ -107,7 +164,7 @@
 }
 
 .environment-tab.is-active small {
-  color: #d4deea;
+  color: #BD4A20;
 }
 
 /* Fuel buttons */
@@ -124,19 +181,19 @@
 
 .fuel-chip span {
   margin-left: 3px;
-  color: #8290a2;
+  color: #BD4A20;
   font-size: 10px;
 }
 
 .fuel-chip.is-active span {
-  color: #d4deea;
+  color: #D8E0EB;
 }
 
 .fuel-divider {
   width: 1px;
   height: 22px;
   margin: 0 6px;
-  background: #d9e0e9;
+  background: #D8E0EB;
 }
 
 .clear-filters {
@@ -166,7 +223,7 @@
 .environment-note {
   margin-bottom: 14px;
   padding: 11px 14px;
-  border: 1px solid #d8e0e9;
+  border: 1px solid #D8E0EB;
   border-left: 3px solid #ff6336;
   border-radius: 8px;
   background: #fff;

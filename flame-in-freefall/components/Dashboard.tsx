@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { IoPlanetSharp } from "react-icons/io5";
 
 import {
   DEFAULT_ENV,
@@ -89,16 +90,16 @@ export default function Dashboard() {
 
       <header className="dashboard-header">
         <div className="dashboard-heading">
-          <h1>Flame in Freefall</h1>
-          <span>Fire Safety Explorer · NASA PSI</span>
+    <div className="dashboard-eyebrow">
+      <IoPlanetSharp className="eyebrow-icon" />
+      <span className="eyebrow-name">Fire Safety Explorer</span>
+      <span className="eyebrow-tag">NASA PSI</span>
+    </div>
+          <h1>SPARK</h1>
         </div>
 
         <p>
-          Which microgravity combustion experiment tells
-          you the most about fire risk in a given
-          environment? Pick an environment; every rank
-          is a sum of five explicit components you can
-          inspect.
+          SPARK (Spacecraft & Habitat Fire-Risk Assessment Ranking) ranks, filters and summarizes microgravity combustion experiments for researchers.
         </p>
       </header>
 
