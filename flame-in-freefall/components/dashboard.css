@@ -319,3 +319,39 @@
   background: #ff6336;
 }
 
+/* Right-hand details panel */
+
+.details-column {
+  min-width: 0;
+}
+
+.details-placeholder {
+  min-height: 250px;
+  padding: 20px;
+  border: 1px solid #d8e0e9;
+  border-radius: 12px;
+  background: #fff;
+  color: #647b99;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.details-placeholder strong {
+  color: #111827;
+  font-size: 16px;
+}
+
+/* Empty results */
+
+.empty-ranking {
+  padding: 28px;
+  border: 1px solid #d8e0e9;
+  border-radius: 10px;
+  background: #fff;
+  color: #647b99;
+  text-align: center;
+}
+
+.empty-ranking strong {
+  color: #142033;
+}
